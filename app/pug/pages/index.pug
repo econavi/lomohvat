@@ -2,76 +2,147 @@ extends ../templates/default/template.pug
 
 block head
 	- var path = '';
-	- var pageTitle = 'Главная страница';
-	- var pageDescription = 'Описание главной страницы';
+	- var pageTitle = 'Главная страница lomohvat';
+	- var pageDescription = 'Описание страницы lomohvat';
 
 block content
 	main.page-main
 
-		.page-main__title
+		section.page-main__title
 			.page-main__title-inner
-				//- .title
+				h1.title Демонтаж, вывоз и&nbsp;скупка металлолома по&nbsp;Москве и&nbsp;Московской области.
+				button.button.button_red.js-modal Оставить заявку
 		
-		.page-main__services
+
+		section.page-main__services
 			.page-main__services-inner
-				.title
-				.page-main__services-list
-					.page-main__services-item
-					.page-main__services-item
-					.page-main__services-item
+				h2.title Наши услуги:
+				include ../../blocks/list-services/list-services.pug
 
-		.page-main__prices
+
+		section.page-main__prices
 			.page-main__prices-inner
-				.title
+				h2.title Цены на&nbsp;прием металлолома:
 				.table__legend
-				.table
+					caption Черный металлолом, цена за 1 тонну
+				table.table
+					tr
+						td Габаритный стальной лом
+						td 9300&nbsp;р.
+					tr
+						td Негабаритный стальной лом
+						td 9000&nbsp;р.
+					tr
+						td Тонколистовой стальной габаритный лом
+						td 8800&nbsp;р.
+					tr
+						td Тонколистовой оцинкованный стальной негабаритный лом
+						td 8500&nbsp;р.
+					tr
+						td Габаритный чугунный лом
+						td 8500&nbsp;р.
+					tr
+						td Негабаритный чугунный лом
+						td 6500&nbsp;р.
+					tr
+						td Автомобильный и бытовой лом
+						td 8000&nbsp;р.
+
 				.table__legend
-				.table
-		
-		.page-main__rules
+					caption Цветной металлолом, цена за 1 кг.
+				table.table
+					tr
+						td Медь
+						td 200&nbsp;р.
+					tr
+						td Латунь
+						td 120&nbsp;р.
+					tr
+						td Алюминий
+						td 55&nbsp;р.
+					tr
+						td Алюминий электротехнический
+						td 80&nbsp;р.
+					tr
+						td Нержавеющая сталь (10% Ni)
+						td 45&nbsp;р.
+					tr
+						td Нержавеющая сталь (8% Ni)
+						td 37&nbsp;р.
+					tr
+						td АКБ
+						td 15&nbsp;р.
+					tr
+						td Свинец
+						td 70&nbsp;р.
+					tr
+						td Алюминиевые банки
+						td 20&nbsp;р.
+					tr
+						td Алюминиевый кабель
+						td 20&nbsp;р.
+					tr
+						td Медный кабель
+						td 90&nbsp;р.
+					tr
+						td Стружка цветных металлов
+						td 20&nbsp;р.
+					tr
+						td Медно-латунные радиаторы
+						td 100&nbsp;р.
+				
+				button.button.button_red.js-modal Заказать услугу
+
+		section.page-main__rules
 			.page-main__rules-inner
-				.title
-				.list
-					.list__item.list__item_middle
-					.list__item.list__item_middle
-					.list__item.list__item_middle
-					.list__item.list__item_middle
-					.list__item.list__item_middle
-					.list__item.list__item_middle
+				h2.title Как мы работаем:
+				include ../../blocks/list-rules/list-rules.pug
 
-		.page-main__advantages
+		section.page-main__advantages
 			.page-main__advantages-inner
-				.title
-				.list
-					.list__item.list__item_vertical
-					.list__item.list__item_vertical
-					.list__item.list__item_vertical
-					.list__item.list__item_vertical
-					.list__item.list__item_vertical
-					.list__item.list__item_vertical
+				h2.title Наши преимущества:
+				include ../../blocks/list-advantages/list-advantages.pug
 
-		.page-main__trust
+		section.page-main__trust
 			.page-main__trust-inner
-				.title
-				.list
-					.list__item.list__item_big
-					.list__item.list__item_big
-					.list__item.list__item_big
+				h2.title Нам доверяют:
+				include ../../blocks/list-trust/list-trust.pug
 
-		.page-main__form
+		section.page-main__form
 			.page-main__form-inner
-				//- .title
+				h2.title Обратившись к нам вы сделаете правильный выбор!
+				include ../../blocks/form/form.pug
+
 		
-		.page-main__addresses
+		section.page-main__addresses
 			.page-main__addresses-inner
-				.title
+				h2.title Адреса в Москве:
 				.page-main__maps
 					.page-main__maps-item
-						.map__description
+						p.map__description
+							b Приемка в Свиблово
+							br
+							| ул. Амундсена, дом 2, стр. 1
+							br
+							| тел.: 
+							include ../../blocks/tel/tel.pug
+							+tel-dark
+							br
+							| Пн-Вс: 8:00 - 20:00
 						.map
+							+yandex-map-1
+					
 					.page-main__maps-item
-						.map__description
+						p.map__description
+							b Приемка в Дегунено<br>
+							|ул. Юных Ленинцев, дом 60<br>
+							|тел.: 
+							include ../../blocks/tel/tel.pug
+							+tel-dark
+							<br>
+							|Пн-Вс: 8:00 - 20:00
 						.map
+							+yandex-map-2
 
 
 

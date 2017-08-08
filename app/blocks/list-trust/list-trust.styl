@@ -1,0 +1,64 @@
+.list-trust
+	list-style none
+	font-size 0
+	
+	&__item
+		display inline-block
+		vertical-align top
+		position relative
+		width 33%
+		min-width 300px
+		center()
+		padding 200px 10px 0
+		margin-bottom 30px
+		font-size 1.6rem
+		font-weight 700
+		
+		+above($tablet)
+			font-size 1.8rem
+		
+		+above($desktop)
+			font-size 2rem
+
+		&:last-child
+			margin-bottom 0
+		
+
+		&_1
+		
+			&::before
+				content ''
+				position absolute
+				top 0
+				left 50%
+				width 300px
+				height 190px
+				margin-left -150px
+				background url('../assets/img/content/trust-icons/item_1.png') no-repeat
+		
+		&_2
+		
+			&::before
+				content ''
+				position absolute
+				top 0
+				left 50%
+				width 300px
+				height 190px
+				margin-left -150px
+				background url('../assets/img/content/trust-icons/item_2.png') no-repeat
+		
+		&_3
+		
+			&::before
+				content ''
+				position absolute
+				top 0
+				left 50%
+				width 300px
+				height 190px
+				margin-left -150px
+				background url('../assets/img/content/trust-icons/item_3.png') no-repeat
+	
+		
+	

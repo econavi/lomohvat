@@ -1,0 +1,38 @@
+.table 
+	width 100%
+	border 1px solid #fff
+	border-collapse collapse
+	text-align left
+	center()
+	margin-bottom 8%
+	
+	+above($tablet)
+		width 80%
+		margin-bottom 5%
+	
+	+above($tv)
+		width 60%
+	
+	&:last-child
+		margin-bottom 0
+
+	& td
+		border 1px solid #fff
+		vertical-align middle
+		padding 10px
+		font-size 1.4rem
+		
+		+above($tablet)
+			font-size 1.8rem
+			
+		&:last-child
+			width 20%
+	
+	&__legend
+		font-size 1.4rem
+		margin-bottom 2%
+		color #77cefe
+		
+		+above($tablet)
+			font-size 1.6rem
+		

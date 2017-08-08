@@ -1,0 +1,20 @@
+form.form(action='javascript:void(0)', method='post')
+	
+	p.form__title Просто заполните форму и&nbsp;отправьте заявку. <br> Вам перезвонит наш менеджер.
+
+	.form__name
+		input.form__input.input(
+			type='text', 
+			name='name', 
+			placeholder='ваше имя'
+		)
+	
+	.form__tel
+		input.form__input.input(
+			type='text', 
+			name='tel', 
+			placeholder='телефон для связи'
+		)
+	
+	
+	button.form__btn.button.button_red(type='submit') Отправить

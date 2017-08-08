@@ -1,0 +1,38 @@
+.button
+	font-family Tahoma, Geneva, sans-serif
+	color #fff
+	outline none
+	border 2px solid #fff
+	cursor pointer
+	text-transform uppercase
+	
+	&_gray
+		border-radius 5px
+		background gray
+		padding 3% 4%
+		font-size 1.4rem
+		
+		+above($desktop)
+			padding 4% 5%
+		
+		+above($tv)
+			padding 10%
+
+	&_red
+		border-radius 60px
+		background #E93F33
+		font-size 1.6rem
+		padding 3% 4%
+		color #fff
+			
+		+above($desktop)
+			font-size 2rem
+	
+	&:hover
+		background green
+	
+	&:active
+		background gray
+		
+		
+	

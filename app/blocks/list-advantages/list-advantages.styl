@@ -1,0 +1,58 @@
+.list-advantages
+	list-style none
+	text-align center
+	center()
+	
+	+above($tablet)
+		width 80%
+		text-align left
+	
+	+above($desktop)
+		width 70%
+	
+	&__item
+		position relative
+		padding-top 20px
+		font-size 1.6rem
+		font-weight 700
+		margin-bottom 5%
+		min-height 30px
+		
+		+above($tablet)
+			padding-top 0
+			padding-left 30px
+			font-size 1.8rem
+		
+		+above($desktop)
+			padding-left 40px
+			font-size 2rem
+		
+		+above($tv)
+			padding-left 45px
+			font-size 2.2rem
+		
+		&:last-child
+			margin-bottom 0
+		
+		&::before
+			content ''
+			position absolute
+			top 0
+			left 50%
+			width 10px
+			height 10px
+			margin-left -5px
+			background #161717
+			transform rotate(45deg)
+			
+			+above($tablet)
+				top 50%
+				left 0
+				margin-top -10px
+				margin-left 0
+				
+			+above($desktop)
+				width 15px
+				height 15px
+			
+			

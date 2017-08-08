@@ -1,0 +1,26 @@
+.mail
+	display inline-block
+	text-decoration none
+	white-space nowrap
+	color #fff
+	
+	+above(360px)
+		
+		&_inner-icon
+			position relative
+			padding-left 15%
+			
+			&::before
+				content ''
+				position absolute
+				top 0
+				left 0
+				width 10%
+				height 100%
+				background-image url('../assets/img/general/mail.svg')
+				background-repeat no-repeat
+				background-size 80% auto
+				background-position 0 center
+	
+	&_inline
+		color #000

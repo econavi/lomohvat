@@ -1,6 +1,18 @@
 header.header
 	.header__inner
 		.header__logo
-			//- include ../logo/logo.pug
+			include ../logo/logo.pug
 		.header__contacts
+			span.header__worktime
+				| Общаемся с&nbsp;8:00 до&nbsp;20:00 по&nbsp;Москве
+			<br>
+			span.header__tel
+				include ../tel/tel.pug
+				+tel-with-icon
+			<br>
+			span.header__mail
+				include ../mail/mail.pug
+				+mail-with-icon
+			
 		.header__callback
+			button.button.button_gray.js-modal(type='button') Заказать звонок

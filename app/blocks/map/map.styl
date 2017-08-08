@@ -1,10 +1,16 @@
 .map
-	mh(347) /*временно*/
-	width 40%
-	float left
-	
-	&__description
-		mh(347) /*временно*/
+	border 3px solid #fff
+	+above($desktop)
+		float left
 		width 60%
-		padding 0 25px
-		float right
+
+	&__description
+		margin-bottom 5%
+		line-height 1.4
+		
+		+above($tablet)
+			font-size 1.8rem
+		
+		+above($desktop)
+			display inline-block
+			text-align left

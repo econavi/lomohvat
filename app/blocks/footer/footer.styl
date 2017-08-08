@@ -1,25 +1,49 @@
 .footer
+	background #333 url('../assets/img/general/bg-dark.png')
 	
 	&__inner
 		container()
 		clearfix()
-		padding-top 30px
-		font-size 0
+		padding 30px 30px
+		color #fff
 
 	&__copyrights
-		mh(85) /*временно*/
-		// display inline-block
-		float left
-		width 33.33%
-	
-	&__social
-		mh(85) /*временно*/
-		// display inline-block
-		float left
-		width 33.33%
+		margin-bottom 5%
+		line-height 2
+		text-align center
 		
+		+above($tablet)
+			font-size 1.8rem
+		
+		+above($desktop)
+			float left
+			width 33.33%
+			text-align right
+	
+
+	&__social		
+		margin-bottom 5%
+		text-align center
+		
+		+above($desktop)
+			float left
+			width 33.33%
+	
+
 	&__contacts
-		mh(85) /*временно*/
-		// display inline-block
-		float right
-		width 33.33%
+		margin-bottom 5%
+		line-height 2
+		text-align center
+		
+		+above($tablet)
+			font-size 1.8rem
+		
+		+above($desktop)
+			float left
+			width 33.33%
+			text-align left
+			
+
+
+
+

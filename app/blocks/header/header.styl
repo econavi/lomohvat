@@ -1,23 +1,104 @@
 .header
+	background #333 url('../assets/img/general/bg-dark.png')
+
 	&__inner
 		container()
-		mh(170) /*временно*/
+		paddingSection()
+		padding-left 3%
+		padding-right 3%
 		font-size 0
-	
-	&__logo
-		mh(170) /*временно*/
-		display inline-block
-		width 24%
-		padding-top 16px
+		clearfix()
 		
+		+above($tv)
+			padding 2% 3% 2%
+
+	&__logo
+		float left
+		width 20%
+		min-width 50px
+		
+		+above($tablet)
+			float none
+			display inline-block
+			vertical-align top
+
 
 	&__contacts
-		mh(170) /*временно*/
-		display inline-block
-		width 41%
+		float right
+		width 70%
+		text-align right
+		margin-bottom 2%
 		
+		+above($tablet)
+			float none
+			display inline-block
+			vertical-align top
+			width 50%
+			margin-right 8%
+			padding-left 5%
+			text-align left
+		
+	
+	&__worktime
+		display inline-block
+		margin-bottom 2%
+		font-size 1.2rem
+		line-height 1.3
+		color #fff
+		
+		+above($tablet)
+			font-size 1.6rem
+
+
+	&__tel
+		display inline-block
+		font-size 2rem
+		line-height 1.2
+		margin-bottom 3%
+		font-weight 900
+		
+		+above($tablet)
+			font-size 2.2rem
+		
+		+above($desktop)
+			font-size 3rem
+
+		
+	&__mail
+		display inline-block
+		font-size 1.4rem
+		line-height 1.3
+		margin-bottom 3%
+		
+		+above($tablet)
+			font-size 1.8rem
+		
+		+above($desktop)
+			font-size 2rem
+	
+	
 	&__callback
-		mh(170) /*временно*/
-		display inline-block
-		width 35%
+		display block
+		clear both
+		margin 2% 0
+		text-align right
 		
+		+above($tablet)
+			display inline-block
+			vertical-align top
+			width 20%
+			margin 0
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
